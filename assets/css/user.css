@@ -1,0 +1,405 @@
+body {
+    background-color:black;;
+    height: 100vh;
+    display: block;
+    background-image: url(../images/book-img.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 10rem;
+}
+
+
+
+
+
+
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation: fadeIn 0.7s forwards;
+  }
+
+main{
+    color: #403e3e;
+}
+
+#main-header {
+    background: linear-gradient(135deg, black, #1b2436, #7a7ade);
+    padding: 1rem 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: #fff; */
+   color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 1.2rem;
+}
+
+#main-h1 {
+   font-size: 1.2rem;
+   margin: 6rem 2.2rem 3rem;
+}
+
+.section {
+    display: flex;
+    /* margin-left: 2rem; */
+    justify-content: space-between;
+}
+
+.Inbox-div {
+    margin-top: 6rem;
+}
+
+.section-div{
+    padding-block: 0.4rem;
+    border-bottom: 1px solid #0000005e;
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+
+
+.topic-link {
+    font-size: 0.85rem;
+    border-bottom: 1px solid #00000052;
+}
+
+
+
+.side-link {
+    color: white;
+}
+
+.section a {
+    font-size: 0.9rem;
+    /* color: black; */
+    text-decoration: none;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.section a:hover {
+    color:#b6b6dd;
+    font-size: 1.1rem;
+   
+}
+
+.topic-span a{
+    color: white;
+    font-size: 0.8rem;
+}
+
+.welcome-ul {
+    margin-left: 25rem;
+}
+
+.profile {
+    margin-top: 24rem;
+    display: flex;
+}
+
+#my-name {
+    margin-right: 3rem;
+    width: 70px; /* Set a fixed width */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." at the end */
+}
+
+.name-edit {
+    display: flex;
+    align-items: center;
+    /* margin-top: 14rem; */
+    justify-content: space-between;
+}
+
+.content-section p {
+    width: 15rem;; /* Set a fixed width */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." at the end */
+}
+
+.topic-span {
+    display: flex;
+        align-items: center;
+      
+}
+
+
+#the-topics{
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.section-ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 20%;
+    border-right: 1px solid black;
+    padding-right: 0.95rem;
+    list-style: none;
+
+
+    background: #000000e6;
+    height: 100vh;
+    color: white;
+    padding-left: 2rem;
+}
+
+.section i{
+    color: white;
+    margin-right: 8px;
+}
+
+article{
+    border: 1px solid #0000002e;
+    background: black;
+    border-radius: 5px;
+    width: 45rem;
+    height: 100%;
+    padding: 2rem;
+    box-shadow: 2px 2px 4px #0000009e;
+}
+
+.article-ul {
+   
+    list-style: none;
+}
+
+#inbox ul{
+    margin-top: 0.3rem;
+}
+
+
+.article-div {
+    width: 100%;
+    display: block;
+
+    margin-block: 0.5rem;
+    background: #cecfd1;
+    border-radius: 10px;
+    padding: 0.6rem;
+    height: 3.5rem;
+    box-shadow: 1px 2px 2px #00000057;
+}
+
+
+.article-div-notif {
+    height: 5rem;
+}
+
+.article-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-div div{
+    font-size: 0.9rem;
+}
+
+
+.article-div a {
+    margin-left: 17rem;
+    font-size: 0.79rem;
+    text-align: center;
+    border-bottom: 1px solid #00000045;
+}
+
+.content-section a:hover {
+    font-size: 0.7rem;
+    color: rgb(101, 98, 98); /* Changes color to red */
+  }
+
+.topic {
+    margin-bottom:0 !important;
+}
+  
+.trash-button {
+    margin-left: 0 !important;
+    border: none !important;
+}
+
+.article-date {
+    margin-left: 7px;
+}
+
+#logout-div {
+    border-bottom: none;
+}
+
+p {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active{
+    display: block;
+}
+
+.topicform > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.topicform > label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.dropdown-menu {
+    margin-bottom: 0.4rem;
+}
+
+#search-ul {
+    border-bottom: 1px solid #00000024;
+}
+
+
+.search-li {
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 0.85rem;
+    color: white;
+}
+
+#topics-type {
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.search-input {
+    display: flex ;
+        align-items: baseline;
+        justify-content: space-between;
+}
+
+.button-search {
+    width: 19.5%;
+    height: 100%;
+}
+
+.divI {
+    display: flex;
+        justify-content: space-between;
+        margin-top: 0.44rem;
+}
+
+.topic-trash {
+    margin-top: 0.3rem;
+}
+
+
+
+#search-ul input {
+    width: 80%;
+}
+
+.topic-item {
+    background: #cecfd1;
+    display: flex;
+    align-items: center;
+ border: none;
+    border-radius: 2px;
+    padding: 0.6rem;
+    height: auto;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 2px #00000057;
+}
+
+.topic-item p {
+    margin: 0; /* Remove default margins */
+    width: initial !important;
+}
+
+.join-topic-btn {
+    padding: 0.4rem 1rem;
+    background-color:#1b2436;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-topic-btn:hover {
+    background-color: #57585b;
+}
+
+.detail-nav {
+    text-decoration: underline !important;
+    font-family: auto;
+}
+
+#subscribed-users {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.subscribed-input {
+    width: 74% !important;
+}
+
+#subscribed-button {
+    padding: 0;
+    height: 33.5px;
+    width: 25% !important;
+}
+
+.topic-header {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: auto;
+    width: initial !important;
+}
+
+.subed-class ul{
+    margin-block: 0.4rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+
+.subed-class li {
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.no-sub {
+    color: white;
+}
